@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+    <title>&#x1F33F; SABEDORIA DA UMBANDA&#x1F33F;</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class = "bungee-tint-regular">&#x1FA98;SABEDORIA DA UMBANDA&#x1FA98;</h1>
+           </header>
+    <main>  
+        <section>
+            <input type="text" id="pesquisa" class="input-field" placeholder="Digite o nome do Orixá ou linha da Entidade">
+            <button onclick="pesquisar()" class="search-button">Pesquisar</button>
+            <div id="resultados-pesquisa"></div>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+            
+            <div id="lista-de-orixas"></div>
+            <div id="lista-de-entidades"></div>
+        </section>
+    
+    </main>
+    <footer>
+        <p>2024 - ORIXAS DA UMBANDA. Todos os direitos reservados</p>
+        <p>Dúvidas entre em contato pelo telefone: 11995825288</p>
+    </footer>
+     <script src="dados.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>

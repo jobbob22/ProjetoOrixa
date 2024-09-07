@@ -1,0 +1,258 @@
+/* Reseta o margin e padding padrão do body e html */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Estiliza o corpo da página */
+body {
+    background-image: url('imagens/umbanda 02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+    background-color: #DDDDDD; /* Cor de fundo da página */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    min-height: 100vh; /* Garante que o body tenha pelo menos 100% da altura da viewport */
+    margin: 0; /* Remove a margem padrão */
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+    font-size: 4rem; /* Tamanho da fonte */
+    color: #222831; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+}
+
+header {
+    background-color: var(--cor-principal);
+    color: aliceblue;
+    text-align: center;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+}
+
+.cabecalho {
+    background-color: var(--cor-principal);
+    color: #333;
+    text-align: center;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    margin-bottom: -1rem; /* Espaçamento abaixo dos inputs */
+}
+.bungee-tint-regular {
+    font-family: "Bungee Tint", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3.5rem; /* Defina o tamanho que preferir */
+  }
+  
+
+/* Estiliza as seções da página */
+section {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+    flex: 1; /* Faz com que a seção cresça para preencher o espaço disponível */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 30rem; /* Largura dos inputs */
+    border: none; /* Remove a borda padrão */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1.5rem; /* Borda arredondada */
+    margin-bottom: 0.5rem; /* Espaçamento abaixo dos inputs */
+    color: #1d4494; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #30475E; /* Cor de fundo do botão */
+    color: #F5F7F8; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+section button:hover {
+    background-color: #30475E; /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 60rem; /* Largura máxima da caixa de resultados */
+    height: 46vh; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 5rem; /* Borda arredondada */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    position: relative;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white; /* Ou outra cor que contraste bem com a imagem */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro transparente para legibilidade */
+    border-radius: 8px;
+    overflow: hidden;
+    background-size: cover; /* Faz a imagem cobrir toda a área da caixa */
+    background-position: top; /* Centraliza a imagem dentro da caixa */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    min-height: 100px; /* Define a altura mínima dos itens */
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura e altura */
+}
+.item-resultado .orixa {
+    position: relative;
+    z-index: 1;
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 2.5rem; /* Tamanho da fonte */
+    color: #efeaea; /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: underline; /* Remove o sublinhado padrão dos links */
+    color: white; /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #45474B; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #6a3939; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 20px; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    font-size: 1rem; /* Tamanho da fonte */
+    position: relative; /* Remove o rodapé do fluxo absoluto */
+}
+
+/* Garante que o rodapé seja empurrado para o fundo */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Faz o main preencher o espaço restante */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+    }
+
+    section input {
+        width: 25rem; /* Largura dos inputs em telas menores */
+        padding: 0.8rem; /* Espaçamento interno em telas menores */
+    }
+
+    .resultados-pesquisa {
+        width: 30rem; /* Largura da caixa de resultados em telas menores */
+        height: 30vh; /* Altura da caixa de resultados em telas menores */
+    }
+
+   /* Estiliza o botão de retorno */
+.return-button {
+    background-color: #30475E; /* Cor de fundo do botão */
+    color: #F5F7F8; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 50%; /* Faz o botão redondo */
+    width: 3rem; /* Largura do botão */
+    height: 3rem; /* Altura do botão */
+    display: flex; /* Usa Flexbox para centralizar o conteúdo */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    position: absolute; /* Permite o posicionamento absoluto do botão */
+    top: 1rem; /* Espaçamento superior */
+    right: 1rem; /* Espaçamento à direita */
+    z-index: 10; /* Coloca o botão acima de outros elementos */
+    display: none; /* Inicialmente invisível */
+}
+
+/* Adiciona um efeito hover ao botão de retorno */
+.return-button:hover {
+    background-color: #1f3d57; /* Cor de fundo ao passar o mouse */
+}
+
+
+/* Ajuste para a caixa de resultados */
+.resultados-pesquisa {
+    position: relative; /* Permite o posicionamento absoluto do botão de retorno */
+    width: 60rem;
+    height: 46vh;
+    overflow-y: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+}
+
+
+    .item-resultado h2 {
+        font-size: 1.5rem; /* Tamanho da fonte dos títulos em telas menores */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+    }
+
+    section input {
+        width: 17rem; /* Largura total dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+}
